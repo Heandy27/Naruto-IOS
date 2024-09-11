@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		BF88354B2C9244A90072B99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88354A2C9244A90072B99E /* AppDelegate.swift */; };
 		BF88354D2C9244A90072B99E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88354C2C9244A90072B99E /* SceneDelegate.swift */; };
-		BF88354F2C9244A90072B99E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88354E2C9244A90072B99E /* ViewController.swift */; };
-		BF8835522C9244A90072B99E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF8835512C9244A90072B99E /* Base */; };
 		BF8835542C9244AA0072B99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8835532C9244AA0072B99E /* Assets.xcassets */; };
 		BF8835572C9244AA0072B99E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF8835562C9244AA0072B99E /* Base */; };
+		BF8835642C9245920072B99E /* NarutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8835622C9245920072B99E /* NarutoViewController.swift */; };
+		BF8835652C9245920072B99E /* NarutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8835632C9245920072B99E /* NarutoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF8835472C9244A90072B99E /* Naruto-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Naruto-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF88354A2C9244A90072B99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF88354C2C9244A90072B99E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF88354E2C9244A90072B99E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF8835512C9244A90072B99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8835532C9244AA0072B99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8835562C9244AA0072B99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8835582C9244AA0072B99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8835622C9245920072B99E /* NarutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoViewController.swift; sourceTree = "<group>"; };
+		BF8835632C9245920072B99E /* NarutoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NarutoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		BF8835492C9244A90072B99E /* Naruto-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				BF88355F2C9245750072B99E /* Presentation */,
+				BF88355E2C92456B0072B99E /* Models */,
 				BF88354A2C9244A90072B99E /* AppDelegate.swift */,
 				BF88354C2C9244A90072B99E /* SceneDelegate.swift */,
-				BF88354E2C9244A90072B99E /* ViewController.swift */,
-				BF8835502C9244A90072B99E /* Main.storyboard */,
 				BF8835532C9244AA0072B99E /* Assets.xcassets */,
 				BF8835552C9244AA0072B99E /* LaunchScreen.storyboard */,
 				BF8835582C9244AA0072B99E /* Info.plist */,
 			);
 			path = "Naruto-IOS";
+			sourceTree = "<group>";
+		};
+		BF88355E2C92456B0072B99E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF88355F2C9245750072B99E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BF8835612C9245860072B99E /* View */,
+				BF8835602C92457F0072B99E /* Controller */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BF8835602C92457F0072B99E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF8835622C9245920072B99E /* NarutoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF8835612C9245860072B99E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8835632C9245920072B99E /* NarutoViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8835652C9245920072B99E /* NarutoViewController.xib in Resources */,
 				BF8835542C9244AA0072B99E /* Assets.xcassets in Resources */,
 				BF8835572C9244AA0072B99E /* Base in Resources */,
-				BF8835522C9244A90072B99E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF88354F2C9244A90072B99E /* ViewController.swift in Sources */,
 				BF88354B2C9244A90072B99E /* AppDelegate.swift in Sources */,
+				BF8835642C9245920072B99E /* NarutoViewController.swift in Sources */,
 				BF88354D2C9244A90072B99E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF8835502C9244A90072B99E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF8835512C9244A90072B99E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF8835552C9244AA0072B99E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +321,6 @@
 				INFOPLIST_FILE = "Naruto-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +348,6 @@
 				INFOPLIST_FILE = "Naruto-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
