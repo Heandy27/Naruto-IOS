@@ -13,6 +13,8 @@
 		BF1CCDFE2C94C6C4006627AE /* NarutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCDFD2C94C6C4006627AE /* NarutoTableViewCell.xib */; };
 		BF1CCDFF2C94C6C4006627AE /* NarutoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CCDFC2C94C6C4006627AE /* NarutoTableViewCell.swift */; };
 		BF1CCE022C9500D9006627AE /* UIImageViewRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CCE012C9500D9006627AE /* UIImageViewRemote.swift */; };
+		BF2DECF72C973632009B5D32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DECF52C973632009B5D32 /* HomeViewController.swift */; };
+		BF2DECF82C973632009B5D32 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2DECF62C973632009B5D32 /* HomeViewController.xib */; };
 		BF88354B2C9244A90072B99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88354A2C9244A90072B99E /* AppDelegate.swift */; };
 		BF88354D2C9244A90072B99E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88354C2C9244A90072B99E /* SceneDelegate.swift */; };
 		BF8835542C9244AA0072B99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8835532C9244AA0072B99E /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		BF1CCDFC2C94C6C4006627AE /* NarutoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoTableViewCell.swift; sourceTree = "<group>"; };
 		BF1CCDFD2C94C6C4006627AE /* NarutoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NarutoTableViewCell.xib; sourceTree = "<group>"; };
 		BF1CCE012C9500D9006627AE /* UIImageViewRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewRemote.swift; sourceTree = "<group>"; };
+		BF2DECF52C973632009B5D32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF2DECF62C973632009B5D32 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		BF8835472C9244A90072B99E /* Naruto-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Naruto-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF88354A2C9244A90072B99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF88354C2C9244A90072B99E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1CCDF62C94BFD6006627AE /* NarutoListViewController.swift */,
+				BF2DECF52C973632009B5D32 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 				BF1CCDF72C94BFD6006627AE /* NarutoListViewController.xib */,
 				BF1CCDFC2C94C6C4006627AE /* NarutoTableViewCell.swift */,
 				BF1CCDFD2C94C6C4006627AE /* NarutoTableViewCell.xib */,
+				BF2DECF62C973632009B5D32 /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 			files = (
 				BF1CCDF82C94BFD6006627AE /* NarutoListViewController.xib in Resources */,
 				BF8835542C9244AA0072B99E /* Assets.xcassets in Resources */,
+				BF2DECF82C973632009B5D32 /* HomeViewController.xib in Resources */,
 				BF1CCDFE2C94C6C4006627AE /* NarutoTableViewCell.xib in Resources */,
 				BF8835572C9244AA0072B99E /* Base in Resources */,
 			);
@@ -196,6 +203,7 @@
 				BF1CCDF92C94BFD6006627AE /* NarutoListViewController.swift in Sources */,
 				BF1CCDFB2C94C147006627AE /* Clan.swift in Sources */,
 				BF88354D2C9244A90072B99E /* SceneDelegate.swift in Sources */,
+				BF2DECF72C973632009B5D32 /* HomeViewController.swift in Sources */,
 				BF1CCE022C9500D9006627AE /* UIImageViewRemote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
