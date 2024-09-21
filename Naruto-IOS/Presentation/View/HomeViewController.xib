@@ -25,20 +25,20 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MhP-yR-NUf">
-                            <rect key="frame" x="71.666666666666686" y="351" width="250" height="150"/>
+                            <rect key="frame" x="46.666666666666657" y="351" width="300" height="150"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="goku@dragonball.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L1c-rV-nla">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="44.666666666666664"/>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L1c-rV-nla">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="44.666666666666664"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5m-IE-Xp4">
-                                    <rect key="frame" x="0.0" y="52.666666666666686" width="250" height="44.666666666666657"/>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5m-IE-Xp4">
+                                    <rect key="frame" x="0.0" y="52.666666666666686" width="300" height="44.666666666666657"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUH-Qc-yfW">
-                                    <rect key="frame" x="0.0" y="105.33333333333331" width="250" height="44.666666666666657"/>
+                                    <rect key="frame" x="0.0" y="105.33333333333331" width="300" height="44.666666666666657"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Login">
                                         <backgroundConfiguration key="background">
@@ -46,10 +46,13 @@
                                         </backgroundConfiguration>
                                         <color key="baseForegroundColor" systemColor="groupTableViewBackgroundColor"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="logginButtonPressed:" destination="-1" eventType="touchUpInside" id="oEz-nf-CAK"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="width" constant="250" id="QtH-4b-sKd"/>
+                                <constraint firstAttribute="width" constant="300" id="QtH-4b-sKd"/>
                                 <constraint firstAttribute="height" constant="150" id="p7x-K6-8IL"/>
                             </constraints>
                         </stackView>

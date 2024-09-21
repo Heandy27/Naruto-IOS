@@ -15,10 +15,15 @@
 		BF1CCE022C9500D9006627AE /* UIImageViewRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CCE012C9500D9006627AE /* UIImageViewRemote.swift */; };
 		BF2DECF72C973632009B5D32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DECF52C973632009B5D32 /* HomeViewController.swift */; };
 		BF2DECF82C973632009B5D32 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2DECF62C973632009B5D32 /* HomeViewController.xib */; };
+		BF5FE4B42C9F412200BD2CB5 /* NarutoDetailUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5FE4B22C9F412200BD2CB5 /* NarutoDetailUIViewController.swift */; };
+		BF5FE4B52C9F412200BD2CB5 /* NarutoDetailUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5FE4B32C9F412200BD2CB5 /* NarutoDetailUIViewController.xib */; };
 		BF88354B2C9244A90072B99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88354A2C9244A90072B99E /* AppDelegate.swift */; };
 		BF88354D2C9244A90072B99E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88354C2C9244A90072B99E /* SceneDelegate.swift */; };
 		BF8835542C9244AA0072B99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8835532C9244AA0072B99E /* Assets.xcassets */; };
 		BF8835572C9244AA0072B99E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BF8835562C9244AA0072B99E /* Base */; };
+		BF9913A22C9B68F100D8178A /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9913A12C9B68F100D8178A /* NetworkModel.swift */; };
+		BF9913A42C9B734200D8178A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9913A32C9B734200D8178A /* APIClient.swift */; };
+		BF9913A62C9B745B00D8178A /* NarutoCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9913A52C9B745B00D8178A /* NarutoCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +35,17 @@
 		BF1CCE012C9500D9006627AE /* UIImageViewRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewRemote.swift; sourceTree = "<group>"; };
 		BF2DECF52C973632009B5D32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BF2DECF62C973632009B5D32 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		BF5FE4B22C9F412200BD2CB5 /* NarutoDetailUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoDetailUIViewController.swift; sourceTree = "<group>"; };
+		BF5FE4B32C9F412200BD2CB5 /* NarutoDetailUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NarutoDetailUIViewController.xib; sourceTree = "<group>"; };
 		BF8835472C9244A90072B99E /* Naruto-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Naruto-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF88354A2C9244A90072B99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF88354C2C9244A90072B99E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF8835532C9244AA0072B99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8835562C9244AA0072B99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8835582C9244AA0072B99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9913A12C9B68F100D8178A /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		BF9913A32C9B734200D8178A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BF9913A52C9B745B00D8178A /* NarutoCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoCharacter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				BF1CCDFA2C94C147006627AE /* Clan.swift */,
+				BF9913A12C9B68F100D8178A /* NetworkModel.swift */,
+				BF9913A32C9B734200D8178A /* APIClient.swift */,
+				BF9913A52C9B745B00D8178A /* NarutoCharacter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 		BF8835602C92457F0072B99E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF5FE4B22C9F412200BD2CB5 /* NarutoDetailUIViewController.swift */,
 				BF1CCDF62C94BFD6006627AE /* NarutoListViewController.swift */,
 				BF2DECF52C973632009B5D32 /* HomeViewController.swift */,
 			);
@@ -117,10 +131,11 @@
 		BF8835612C9245860072B99E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF2DECF62C973632009B5D32 /* HomeViewController.xib */,
 				BF1CCDF72C94BFD6006627AE /* NarutoListViewController.xib */,
 				BF1CCDFC2C94C6C4006627AE /* NarutoTableViewCell.swift */,
 				BF1CCDFD2C94C6C4006627AE /* NarutoTableViewCell.xib */,
-				BF2DECF62C973632009B5D32 /* HomeViewController.xib */,
+				BF5FE4B32C9F412200BD2CB5 /* NarutoDetailUIViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5FE4B52C9F412200BD2CB5 /* NarutoDetailUIViewController.xib in Resources */,
 				BF1CCDF82C94BFD6006627AE /* NarutoListViewController.xib in Resources */,
 				BF8835542C9244AA0072B99E /* Assets.xcassets in Resources */,
 				BF2DECF82C973632009B5D32 /* HomeViewController.xib in Resources */,
@@ -198,13 +214,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9913A22C9B68F100D8178A /* NetworkModel.swift in Sources */,
 				BF1CCDFF2C94C6C4006627AE /* NarutoTableViewCell.swift in Sources */,
 				BF88354B2C9244A90072B99E /* AppDelegate.swift in Sources */,
 				BF1CCDF92C94BFD6006627AE /* NarutoListViewController.swift in Sources */,
 				BF1CCDFB2C94C147006627AE /* Clan.swift in Sources */,
 				BF88354D2C9244A90072B99E /* SceneDelegate.swift in Sources */,
+				BF9913A62C9B745B00D8178A /* NarutoCharacter.swift in Sources */,
 				BF2DECF72C973632009B5D32 /* HomeViewController.swift in Sources */,
+				BF5FE4B42C9F412200BD2CB5 /* NarutoDetailUIViewController.swift in Sources */,
 				BF1CCE022C9500D9006627AE /* UIImageViewRemote.swift in Sources */,
+				BF9913A42C9B734200D8178A /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

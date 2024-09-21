@@ -9,9 +9,9 @@ import Foundation
 
 
 enum Clan: String, CaseIterable {
-    case uzumaki = "Uzumaki"
-    case uchiha = "Uchiha"
-    case senju = "Senju"
+    case uzumaki = "Naruto Uzumaki"
+    case uchiha = "Itachi Uchiha"
+    case senju = "Hashirama Senju"
 }
 
 // Extendemos la logica del enum osea "Clan", hacemos una variable computada para que retorne una URL
@@ -20,11 +20,11 @@ extension Clan {
     var imageURL: URL? {
         switch self {
         case .senju:
-            URL(string: "https://awoiaf.westeros.org/images/1/19/House_Stark.png")
+            URL(string: "https://static.wikia.nocookie.net/naruto/images/7/7e/Hashirama_Senju.png")
         case .uzumaki:
-            URL(string: "https://awoiaf.westeros.org/images/thumb/1/1e/House_Targaryen.svg/545px-House_Targaryen.svg.png")
+            URL(string: "https://static.wikia.nocookie.net/naruto/images/7/7d/Naruto_Part_II.png")
         case .uchiha:
-            URL(string: "https://awoiaf.westeros.org/images/8/88/House_Lannister.png")
+            URL(string: "https://static.wikia.nocookie.net/naruto/images/b/bb/Itachi.png")
         }
     }
 }

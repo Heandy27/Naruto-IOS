@@ -32,6 +32,7 @@ final class NarutoListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         tableView.register(UINib(nibName: NarutoTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: NarutoTableViewCell.identifier)
         
         datasource = DataSource(tableView: tableView, cellProvider: { tableView, indexPath, clan in
@@ -46,8 +47,18 @@ final class NarutoListViewController: UITableViewController {
         snapshot.appendSections([0])
         snapshot.appendItems(clans)
         datasource?.apply(snapshot)
-    }
+        // Imprimir la data! :D
+        NetworkModel.shared.getAllCharacters { result in
+            switch result {
+            case let .success(characters):
+                print(characters)
+            case let .failure(error):
+                print(error)
+            }
+        }
 
+    }
+    
     
 }
 
@@ -56,4 +67,11 @@ extension NarutoListViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let houseIndexPath = clans[indexPath.row]
+        let narutoDetailVC = NarutoDetailUIViewController(clanes: houseIndexPath)
+        navigationController?.show(narutoDetailVC, sender: self)
+    }
+    
 }
